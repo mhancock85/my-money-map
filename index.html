@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Money Map | Your Personal Finance Guide</title>
+    <meta name="description"
+        content="Personal Finance Coaching with Marcia. Budgeting, Investing, Debt Management, and Savings.">
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+    <script src="translations.js" defer></script>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="brand">
+                My Money Map<span class="brand-dot"></span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#about" class="nav-link" data-i18n="nav.about">About Marcia</a></li>
+                <li class="dropdown">
+                    <a href="#services" class="nav-link"><span data-i18n="nav.services">Services</span> <i
+                            class="fa-solid fa-chevron-down" style="font-size: 0.7em; margin-left: 4px;"></i></a>
+                    <div class="dropdown-menu">
+                        <a href="#" class="dropdown-item" data-i18n="nav.dropdown.coaching">Coaching</a>
+                        <a href="#" class="dropdown-item" data-i18n="nav.dropdown.events">Events</a>
+                        <a href="#" class="dropdown-item" data-i18n="nav.dropdown.partners">Partnerships</a>
+                    </div>
+                </li>
+                <li><a href="#resources" class="nav-link" data-i18n="nav.resources">Resources</a></li>
+            </ul>
+            <div class="nav-contact">
+                <div class="lang-switch">
+                    <button class="lang-btn active" data-lang="en" title="English">🇬🇧</button>
+                    <button class="lang-btn" data-lang="pt" title="Português">🇧🇷</button>
+                </div>
+                <a href="#contact" class="btn btn-primary" data-i18n="nav.book">Book a Free Discovery Call</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container hero-grid">
+            <div class="hero-content">
+                <span class="tag" data-i18n="hero.tag">Unlock Your Wealth</span>
+                <h1 data-i18n="hero.title">Your Personal <br>Finance Guide</h1>
+                <p data-i18n="hero.desc">Expert coaching on budgeting, debt management, and investing. Let's map out
+                    your journey to financial freedom together.</p>
+                <div style="display: flex; gap: 1rem;">
+                    <a href="#services" class="btn btn-primary" data-i18n="hero.cta">Start Your Journey</a>
+                    <a href="#about"
+                        style="color: var(--color-text-dark); text-decoration: none; font-weight: 600; display: flex; align-items: center; gap: 0.5rem;">
+                        <i class="fa-regular fa-circle-play"></i> <span data-i18n="hero.meet">Meet Marcia</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="hero-visual">
+                <!-- Floating Widgets for that "Finazze" look -->
+                <div class="float-card float-top-left">
+                    <div style="background: #E8F7D4; padding: 10px; border-radius: 50%;">
+                        <i class="fa-solid fa-arrow-trend-up" style="color: var(--color-bg-dark);"></i>
+                    </div>
+                    <div>
+                        <div style="font-size: 0.8rem; color: #666;" data-i18n="hero.float1.label">Monthly Savings</div>
+                        <div style="font-weight: 700;" data-i18n="hero.float1.val">+24% Growth</div>
+                    </div>
+                </div>
+
+                <div class="float-card float-bottom-right">
+                    <div style="background: #E0E7FF; padding: 10px; border-radius: 50%;">
+                        <i class="fa-solid fa-piggy-bank" style="color: #4F46E5;"></i>
+                    </div>
+                    <div>
+                        <div style="font-size: 0.8rem; color: #666;" data-i18n="hero.float2.label">Budget Goal</div>
+                        <div style="font-weight: 700;" data-i18n="hero.float2.val">On Track</div>
+                    </div>
+                </div>
+
+                <img src="assets/images/hero.png" alt="Growth and Finance Illustration" class="hero-img">
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <span class="tag" data-i18n="services.tag">Strategic Solutions</span>
+                <h2 data-i18n="services.title">Comprehensive <br>Financial Coaching</h2>
+            </div>
+
+            <div class="services-grid">
+                <!-- Card 1 -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fa-solid fa-chart-pie"></i>
+                    </div>
+                    <h3 data-i18n="services.card1.title">Budgeting & Planning</h3>
+                    <p data-i18n="services.card1.desc">Create a realistic spending plan that fits your lifestyle while
+                        prioritizing your long-term goals.</p>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fa-solid fa-sack-dollar"></i>
+                    </div>
+                    <h3 data-i18n="services.card2.title">Debt Management</h3>
+                    <p data-i18n="services.card2.desc">Strategies to tackle debt efficiently and regain control of your
+                        financial health.</p>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fa-solid fa-seedling"></i>
+                    </div>
+                    <h3 data-i18n="services.card3.title">Investing Basics</h3>
+                    <p data-i18n="services.card3.desc">Demystifying the stock market and building a diversified
+                        portfolio for future growth.</p>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fa-solid fa-plane-up"></i>
+                    </div>
+                    <h3 data-i18n="services.card4.title">Miles & Discounts</h3>
+                    <p data-i18n="services.card4.desc">Learn how to maximize rewards, travel for less, and find hidden
+                        savings in your daily life.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container about-grid">
+            <div class="about-img-container">
+                <img src="assets/images/real_marcia.png" alt="Marcia Financial Consultant" class="about-img">
+                <div class="badge">
+                    C.P.F.E.®️ Certified
+                </div>
+            </div>
+
+            <div class="about-content">
+                <span class="tag" style="background: rgba(255,255,255,0.1); color: var(--color-primary);"
+                    data-i18n="about.tag">About Marcia</span>
+                <h2 data-i18n="about.title">Your Partner in <br>Wealth Building</h2>
+                <p data-i18n="about.desc">Financial freedom isn't just about the numbers; it's about the confidence to
+                    live the life you want. As a Certified Personal Finance Consultant, I bridge the gap between complex
+                    financial concepts and actionable daily habits.</p>
+
+                <ul class="creds-list">
+                    <li><i class="fa-solid fa-circle-check check-icon"></i> <span data-i18n="about.creds.1">Certified
+                            Personal Finance Consultant (C.P.F.E.®️)</span></li>
+                    <li><i class="fa-solid fa-circle-check check-icon"></i> <span data-i18n="about.creds.2">Specialized
+                            in Savings & Miles Optimisation</span></li>
+                    <li><i class="fa-solid fa-circle-check check-icon"></i> <span data-i18n="about.creds.3">1-on-1
+                            Mentoring Sessions</span></li>
+                    <li><i class="fa-solid fa-circle-check check-icon"></i> <span data-i18n="about.creds.4">Tailored
+                            Roadmaps for Every Client</span></li>
+                </ul>
+
+                <a href="#contact" class="btn btn-primary" data-i18n="about.btn">Book a Free Discovery Call</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-content">
+            <div>
+                <a href="#" class="brand" style="color: white;">
+                    My Money Map<span class="brand-dot"></span>
+                </a>
+                <p style="margin-top: 1rem; opacity: 0.7;" data-i18n="footer.tagline">Empowering your financial future.
+                </p>
+            </div>
+
+            <div style="text-align: right;">
+                <p style="color: white; margin-bottom: 0.5rem;">myfinancemap.uk</p>
+                <p style="opacity: 0.5; font-size: 0.9rem;" data-i18n="footer.copyright">&copy; 2026 My Money Map. All
+                    rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const dropdown = document.querySelector('.dropdown');
+        const dropdownLink = dropdown.querySelector('.nav-link');
+
+        // Click to toggle
+        dropdownLink.addEventListener('click', (e) => {
+            e.preventDefault();
+            dropdown.classList.toggle('active');
+        });
+
+        // Click outside to close
+        document.addEventListener('click', (e) => {
+            if (!dropdown.contains(e.target)) {
+                dropdown.classList.remove('active');
+            }
+        });
+    });
+</script>
+
+</html>
