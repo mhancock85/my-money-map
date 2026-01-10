@@ -520,3 +520,47 @@ footer {
     font-size: 1.25rem;
     margin-bottom: 0.5rem;
 }
+
+/* Social Links */
+.social-links {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.social-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 38px;
+    height: 38px;
+    background: rgba(10, 31, 28, 0.05);
+    color: var(--color-bg-dark);
+    border-radius: 50%;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-size: 1.1rem;
+}
+
+.social-link:hover {
+    background: var(--color-bg-dark);
+    color: var(--color-primary);
+    transform: translateY(-2px);
+}
+
+/* Footer specific social link style */
+footer .social-link {
+    background: rgba(255, 255, 255, 0.1);
+    color: var(--color-primary);
+}
+
+footer .social-link:hover {
+    background: var(--color-primary);
+    color: var(--color-bg-dark);
+}
+
+@media (max-width: 767px) {
+    .nav-contact .social-links {
+        display: none;
+    }
+}

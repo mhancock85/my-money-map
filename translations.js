@@ -45,6 +45,7 @@ const translations = {
 
         // Footer
         "footer.tagline": "Empowering your financial future.",
+        "footer.social.instagram": "Follow Marcia on Instagram",
         "footer.copyright": "© 2026 My Money Map. All rights reserved."
     },
 
@@ -93,6 +94,7 @@ const translations = {
 
         // Footer
         "footer.tagline": "Capacitando seu futuro financeiro.",
+        "footer.social.instagram": "Siga a Marcia no Instagram",
         "footer.copyright": "© 2026 My Money Map. Todos os direitos reservados."
     }
 };
@@ -121,11 +123,19 @@ class I18n {
         this.currentLang = lang;
         localStorage.setItem('lang', lang);
 
-        // Update all translatable elements
+        // Update all translatable elements (innerHTML)
         document.querySelectorAll('[data-i18n]').forEach(el => {
             const key = el.getAttribute('data-i18n');
             if (translations[lang] && translations[lang][key]) {
                 el.innerHTML = translations[lang][key];
+            }
+        });
+
+        // Update titles (for social links/tooltips)
+        document.querySelectorAll('[data-i18n-title]').forEach(el => {
+            const key = el.getAttribute('data-i18n-title');
+            if (translations[lang] && translations[lang][key]) {
+                el.title = translations[lang][key];
             }
         });
 
