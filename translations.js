@@ -46,6 +46,7 @@ const translations = {
         // Footer
         "footer.tagline": "Empowering your financial future.",
         "footer.social.instagram": "Follow Marcia on Instagram",
+        "footer.social.linkedin": "Follow Marcia on LinkedIn",
         "footer.copyright": "© 2026 My Money Map. All rights reserved."
     },
 
@@ -95,6 +96,7 @@ const translations = {
         // Footer
         "footer.tagline": "Capacitando seu futuro financeiro.",
         "footer.social.instagram": "Siga a Marcia no Instagram",
+        "footer.social.linkedin": "Siga a Marcia no LinkedIn",
         "footer.copyright": "© 2026 My Money Map. Todos os direitos reservados."
     }
 };
