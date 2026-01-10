@@ -5,10 +5,18 @@ const translations = {
         "nav.about": "About Marcia",
         "nav.services": "Services",
         "nav.resources": "Resources",
-        "nav.book": "Book a Free Discovery Call",
+        "nav.book_call": "Book a Free Discovery Call",
         "nav.dropdown.coaching": "Coaching",
         "nav.dropdown.events": "Events",
         "nav.dropdown.partners": "Partnerships",
+
+        // Contact Section
+        "contact.title": "Get Started",
+        "contact.description": "Ready to map out your financial future? Send me a message and I'll get back to you within 24 hours.",
+        "contact.name_placeholder": "Your Name",
+        "contact.email_placeholder": "Your Email",
+        "contact.message_placeholder": "Briefly describe your financial goal (e.g., 'Optimize my UK-Portugal miles')",
+        "contact.submit_button": "Send Message",
 
         // Hero Section
         "hero.tag": "Unlock Your Wealth",
@@ -55,10 +63,18 @@ const translations = {
         "nav.about": "Sobre a Marcia",
         "nav.services": "Serviços",
         "nav.resources": "Recursos",
-        "nav.book": "Agende uma Chamada Grátis",
+        "nav.book_call": "Agende uma Chamada Grátis",
         "nav.dropdown.coaching": "Coaching",
         "nav.dropdown.events": "Eventos",
         "nav.dropdown.partners": "Parcerias",
+
+        // Contact Section
+        "contact.title": "Comece Agora",
+        "contact.description": "Pronto para traçar seu futuro financeiro? Envie-me uma mensagem e entrarei em contato em até 24 horas.",
+        "contact.name_placeholder": "Seu Nome",
+        "contact.email_placeholder": "Seu E-mail",
+        "contact.message_placeholder": "Descreva brevemente seu objetivo (ex: 'Otimizar milhas UK-Portugal')",
+        "contact.submit_button": "Enviar Mensagem",
 
         // Hero Section
         "hero.tag": "Desbloqueie Sua Riqueza",
@@ -138,6 +154,14 @@ class I18n {
             const key = el.getAttribute('data-i18n-title');
             if (translations[lang] && translations[lang][key]) {
                 el.title = translations[lang][key];
+            }
+        });
+
+        // Update placeholders
+        document.querySelectorAll('[data-i18n-placeholder]').forEach(el => {
+            const key = el.getAttribute('data-i18n-placeholder');
+            if (translations[lang] && translations[lang][key]) {
+                el.placeholder = translations[lang][key];
             }
         });
 
