@@ -289,9 +289,14 @@
         form.addEventListener('submit', async (e) => {
             e.preventDefault();
             
+            // Get current language
+            const currentLang = localStorage.getItem('lang') || 'en';
+            const loadingText = currentLang === 'pt' ? 'Enviando...' : 'Sending...';
+            const buttonText = currentLang === 'pt' ? 'Enviar Mensagem' : 'Send Message';
+            
             // Disable button and show loading state
             submitBtn.disabled = true;
-            submitBtn.textContent = 'Sending...';
+            submitBtn.textContent = loadingText;
             successMsg.style.display = 'none';
             errorMsg.style.display = 'none';
 
@@ -311,16 +316,18 @@
                     body: JSON.stringify(formData)
                 });
 
-                // With no-cors, we can't read the response, but if no error thrown, assume success
+                // Update success message text based on current language
+                successMsg.textContent = translations[currentLang]['contact.success'];
                 successMsg.style.display = 'block';
                 form.reset();
                 
             } catch (error) {
                 console.error('Form submission error:', error);
+                errorMsg.textContent = translations[currentLang]['contact.error'];
                 errorMsg.style.display = 'block';
             } finally {
                 submitBtn.disabled = false;
-                submitBtn.textContent = 'Send Message';
+                submitBtn.textContent = buttonText;
             }
         });
     });
