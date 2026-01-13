@@ -17,6 +17,8 @@ const translations = {
         "contact.email_placeholder": "Your Email",
         "contact.message_placeholder": "Briefly describe your financial goal (e.g., 'Optimize my UK-Portugal miles')",
         "contact.submit_button": "Send Message",
+        "contact.success": "✅ Thank you! Your message has been sent. Marcia will be in touch soon.",
+        "contact.error": "❌ Something went wrong. Please try again or email directly.",
 
         // Hero Section
         "hero.tag": "Unlock Your Wealth",
@@ -75,6 +77,8 @@ const translations = {
         "contact.email_placeholder": "Seu E-mail",
         "contact.message_placeholder": "Descreva brevemente seu objetivo (ex: 'Otimizar milhas UK-Portugal')",
         "contact.submit_button": "Enviar Mensagem",
+        "contact.success": "✅ Obrigada! Sua mensagem foi enviada. Marcia entrará em contato em breve.",
+        "contact.error": "❌ Algo deu errado. Por favor, tente novamente ou envie um e-mail.",
 
         // Hero Section
         "hero.tag": "Desbloqueie Sua Riqueza",
